@@ -18,14 +18,14 @@
 <body>
 
 <h1>LittlePerch Privacy Policy</h1>
-<p class="updated">Last updated: August 9, 2026</p>
+<p class="updated">Last updated: October 7, 2026</p>
 
 <div class="callout">
-  <strong>Short version:</strong> LittlePerch has no backend server and does not collect, store, or sell your personal data on any server we operate. Almost everything you do in the app (saved activities, your preferences, filters) stays on your own device. The only data that leaves your device goes directly to Google, for the specific features described below — never to us.
+  <strong>Short version:</strong> Most of what you do in the app (preferences, filters, and — unless you sign in — your saved activities) stays on your own device. If you sign in with Google, your basic profile and saved activities are stored on our Firebase backend so they follow you across devices. We also collect anonymous usage analytics (which screens and activities people view, save, get directions to, or share) to understand what's useful and improve the app — this is not tied to your name or email unless you're signed in, and we don't run ads, use it for ad targeting, or sell it to anyone.
 </div>
 
 <h2>Who this policy covers</h2>
-<p>This policy describes the data practices of the LittlePerch mobile app ("LittlePerch," "the app," "we," "us"), a directory of San Francisco kids' and family activities. LittlePerch is designed to be used by parents and caregivers to find and plan activities for their children — it is not designed for direct, unsupervised use by children.</p>
+<p>This policy describes the data practices of the LittlePerch mobile app ("LittlePerch," "the app," "we," "us"), a directory of Bay Area kids' and family activities. LittlePerch is designed to be used by parents and caregivers to find and plan activities for their children — it is not designed for direct, unsupervised use by children.</p>
 
 <h2>What we collect and store</h2>
 
@@ -33,43 +33,58 @@
 <p>When you use LittlePerch, the following is saved locally on your device (not on any server we control):</p>
 <ul>
   <li>Onboarding preferences you set — age ranges and interests, used to personalize recommendations</li>
-  <li>Activities you save/favorite</li>
+  <li>Activities you save/favorite, if you're not signed in (see "Account data" below for what happens once you sign in)</li>
   <li>Neighborhood/area filters you apply</li>
-  <li>Whether you're signed in with Google, and basic profile info from that sign-in (see below)</li>
+  <li>Whether you're signed in with Google</li>
 </ul>
-<p>This data is stored using your device's local storage. It is never transmitted to LittlePerch or any server we operate. Uninstalling the app deletes this data.</p>
+<p>This data is stored using your device's local storage and is never transmitted to us. Uninstalling the app deletes this data. If you sign in with Google, some of this (your profile and saved activities) is additionally stored on our Firebase backend — see below.</p>
 
 <h3 style="font-size:15px;margin-top:20px;">Google Sign-In (optional)</h3>
-<p>If you choose to sign in with Google, LittlePerch requests basic profile information directly from Google — your name, email address, and profile photo — using Google's own Sign-In service. This is used only to personalize your experience within the app on your device (for example, so your saved activities feel tied to "you"). We do not receive your Google password, and we do not store this profile information on any server — it stays on your device, tied to your local app data. You can sign out at any time, which clears this locally.</p>
+<p>If you choose to sign in with Google, LittlePerch requests basic profile information directly from Google — your name, email address, and profile photo — using Google's own Sign-In service. We do not receive your Google password. Once signed in, we store your name, email, profile photo, and your saved activities/playgrounds on our Firebase backend (see below), so they follow you if you use the app on another device. You can sign out at any time, which clears the signed-in state on your device (your account data remains on our backend so it's there if you sign in again — see "Your choices" for how to request deletion).</p>
+
+<h3 style="font-size:15px;margin-top:20px;">Account data on our Firebase backend</h3>
+<p>If — and only if — you sign in with Google, we store the following on Firebase (a backend service we configure, operated by Google on our behalf): your name, email address, profile photo URL, and the activities/playgrounds you've saved. This lets your saved list follow you across devices. If you never sign in, none of this applies — your saved activities and preferences stay local to your device only, as described above.</p>
+
+<h3 style="font-size:15px;margin-top:20px;">Anonymous usage analytics</h3>
+<p>We use Firebase Analytics (provided by Google) to understand how people use LittlePerch, so we can improve the app and make informed decisions about which features and activity categories to invest in. This collects anonymous, aggregated usage events such as:</p>
+<ul>
+  <li>Which screens/categories you browse (e.g. Playgrounds, Libraries &amp; Museums)</li>
+  <li>Which activities you view, and whether you save them, tap "Get directions," add them to your calendar, or share them</li>
+  <li>Coarse, city-level location derived from your device's IP address (not precise GPS location; analytics runs on the web version only)</li>
+</ul>
+<p>These events are tied to an anonymous, random identifier generated for your device/browser — not to your name or email, unless you're signed in with Google, in which case usage events can be associated with your account so we can, for example, understand what signed-in users find useful. We do not enable Google's optional demographic/interest-category reporting (sometimes called "Google Signals"), do not use this data for advertising, and do not share or sell it to third parties.</p>
 
 <h2>Third-party services we use</h2>
-<p>Certain features in LittlePerch work by making requests directly from your device to these third-party services. We don't see or store the content of these requests ourselves — they go straight from your device to the service listed:</p>
+<p>Certain features in LittlePerch work by making requests directly from your device to these third-party services. Aside from Firebase (above), we don't see or store the content of these requests ourselves — they go straight from your device to the service listed:</p>
 <ul>
   <li><strong>Google Maps &amp; Places</strong> — powers the in-app map, directions links (which open Google Maps), and playground photos/ratings. Governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
   <li><strong>Google Sign-In</strong> — see above. Governed by Google's Privacy Policy.</li>
+  <li><strong>Firebase (Google)</strong> — our backend for account data and anonymous usage analytics, see above. Governed by <a href="https://firebase.google.com/support/privacy">Firebase's Privacy and Security policy</a>.</li>
   <li><strong>Open-Meteo</strong> (open-meteo.com) — powers the weather widget. We send a fixed San Francisco coordinate, not your actual location — this service does not receive any personal or device-identifying information from the app.</li>
   <li><strong>Individual activity/event organizers' own websites</strong> — when you view an activity's detail page, the app may briefly fetch that organization's own public web page to display their event photo. No personal information about you is sent in this request.</li>
 </ul>
 
 <h2>What we don't do</h2>
 <ul>
-  <li>We don't run advertising or ad networks in this app.</li>
-  <li>We don't use analytics, tracking, or crash-reporting SDKs.</li>
-  <li>We don't have a server that stores your personal data, account information, or usage history.</li>
+  <li>We don't run advertising or ad networks in this app, and we don't use analytics data for ad targeting.</li>
+  <li>We don't use crash-reporting SDKs.</li>
+  <li>We don't enable demographic/interest-category ("Google Signals") reporting in our analytics.</li>
   <li>We don't sell or share your data with third parties for marketing purposes.</li>
 </ul>
 
 <h2>Location</h2>
-<p>LittlePerch does not currently request or use your device's precise location. The weather shown in the app is for San Francisco generally, not your specific location.</p>
+<p>If you tap the "Near Me" button, LittlePerch asks your device for permission to use your location while the app is open, so it can show nearby playgrounds, pools, libraries, museums, daycares, schools, and events on a map. Your location is used on your device only for that feature; it is not sent to us, stored on our servers, or shared with anyone. You can decline or later revoke permission in your device's Settings and still use the rest of the app. The weather shown in the app is for the San Francisco area generally, not your specific location. Our analytics provider (on the web version of the app) derives a coarse, city-level location from your device's IP address, as described above.</p>
 
 <h2>Children's privacy</h2>
 <p>LittlePerch is intended for use by parents and caregivers, not for direct, unsupervised use by children. We do not knowingly collect personal information directly from children under 13. If you believe a child has provided us with personal information, please contact us using the information below and we will address it.</p>
 
 <h2>Your choices</h2>
 <ul>
-  <li><strong>Delete your data:</strong> uninstalling the app removes all locally stored data (saved activities, preferences, sign-in state).</li>
+  <li><strong>Delete your local data:</strong> uninstalling the app removes all locally stored data (saved activities, preferences, sign-in state).</li>
+  <li><strong>Delete your account data:</strong> if you've signed in with Google, email us at the address below to request deletion of your name, email, profile photo, and saved activities from our Firebase backend.</li>
   <li><strong>Sign out:</strong> use the Sign Out option in the app to clear your local Google sign-in state at any time.</li>
-  <li><strong>Location:</strong> the app does not request location access, so there is nothing to opt out of.</li>
+  <li><strong>Analytics:</strong> usage analytics is anonymous by default (see above); it isn't linked to your identity unless you're signed in. We don't currently offer an in-app analytics opt-out — contact us if you'd like to discuss this.</li>
+  <li><strong>Location:</strong> location is only requested when you use "Near Me"; you can deny or revoke it any time in your device's Settings.</li>
 </ul>
 
 <h2>Changes to this policy</h2>
